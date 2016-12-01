@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<body>
+		<div style="">
+			<div style="float: left;width: 100px;height: 100px;background: red;"></div>
+			<div style="width: 200px;height: 50px;background: yellow;"></div>
+			<!--<div style="clear: both;"></div>-->
+			<br style="clear: both;" />
+		</div>
+		<div class="div" style="width: 100px;height: 100px;background: pink;">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		new function() {
+			document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
+			window.addEventListener("resize", function() {
+				document.documentElement.style.fontSize = innerWidth / 7.5 + "px";
+			}, false);
+		};
+	</script>
+</html>

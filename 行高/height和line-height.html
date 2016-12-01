@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.test1{font-size: 20px;line-height: 0px;background: yellow;border:1px solid #cccccc;}
+			.test2{font-size:0px;line-height: 20px;background: pink;border:1px solid #cccccc;}
+		</style>
+	</head>
+	<body>
+		<div id="div">h</div>
+		<div class="test1">测试1</div>
+		<div class="test2">测试2</div>
+		<div style="line-height: 20px;">
+			还开心啊好开心！
+			<span style="line-height: 40px;background: red;">行高40哦</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var odiv=document.querySelector("#div");
+		console.log(getComputedStyle(odiv,null).fontSize)
+		console.log(getComputedStyle(odiv,null).height)
+		console.log(getComputedStyle(odiv,null).lineHeight)
+	</script>
+</html>

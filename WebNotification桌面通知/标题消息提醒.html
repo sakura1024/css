@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>樱花</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+		var isShine=true;
+		var titleInit = document.title;
+			setInterval(function() {
+				var title = document.title;
+				if(isShine == true) {
+					if(/你/.test(title) == false) {
+						document.title = '【你有新消息】';
+					} else {
+						document.title = '【　　　　　】';
+					}
+				} else {
+					document.title = titleInit;
+				}
+			}, 500);
+			window.onfocus=function(){
+				isShine=false;
+			}
+			window.onblur=function(){
+				isShine=true;
+			}
+			
+		</script>
+	</body>
+
+</html>
